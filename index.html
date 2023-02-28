@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Henry Lin Website</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header>
+
+    <nav>
+        <h1 class="heading-name">Henry Lin</h1>
+        <ul id="regular-menu">
+            <li><a href=".">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger"><img src="menu.png" alt="menu"></label>
+        <ul id="hamburger-menu">
+            <li class="mobile-item"><a href=".">Home</a></li>
+            <li class="mobile-item"><a href="#education">Education</a></li>
+            <li class="mobile-item"><a href="#skills">Skills</a></li>
+            <li class="mobile-item"><a href="#experience">Experience</a></li>
+            <li class="mobile-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+<main>
+    <h2>Personal Résumé Website</h2>
+    <!--image from pexels.com, free to use and attribution not required-->
+    <picture id="landscape">
+        <source media="(max-width:750px)" srcset="media/stock-narrow.webp" type="image/webp">
+        <source media="(max-width:750px)" srcset="media/stock-narrow.jpg" type="image/jpg">
+        <source srcset="media/stock.webp" type="image/webp">
+        <img src="media/stock.jpg" width="2000" height="753" alt="ice river landscape">
+    </picture>
+
+    <div id="maintext">
+        <section id="education">
+            <h3>Education</h3>
+            <p>I am a second year undergraduate student at University of California San Diego majoring in Computer
+                Engineering.</p>
+        </section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <h4>Programming Languages</h4>
+            <p>Java, C++, C, Python, <b>HTML</b></p>
+
+        </section>
+        <section id="experience">
+            <h3>Experience</h3>
+            <aside>This is my <a href="https://github.com/hlm01">github</a>.</aside>
+            <h4>Instructional Assistant</h4>
+            <i>University of California San Diego CSE <span>September 2022-present</span></i>
+            <br>
+            <p>I am a tutor for the <strong>discrete math</strong> class at UCSD of <em>300</em> students. I hold office
+                hours and grade student work.</p>
+
+            <h4>Translator</h4>
+            <i>Silk Software <span>July 2020 - August 2020</span></i>
+            <br>
+            <p>Translated hundreds of online grocery item descriptions from Chinese to English</p>
+
+        </section>
+        <section id="projects">
+            <h3>Projects</h3>
+            <h4>Fruit Ripeness Sensor</h4>
+            <p>I designed a fruit ripeness sensor using a low cost impedance measurement chip with a Python desktop
+                application.</p>
+            <figure>
+                <!--my own image-->
+                <picture>
+                    <source srcset="media/project1.jpg" type="image/jpg">
+                    <img src="media/project1.webp" width="200" height="267" alt="sensor chip">
+                </picture>
+                <figcaption>Fruit impedance measurement chip</figcaption>
+            </figure>
+        </section>
+    </div>
+</main>
+</body>
+</html>

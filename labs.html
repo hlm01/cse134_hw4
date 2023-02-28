@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labs | Henry's Website</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <style>
+        canvas {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Labs</h1>
+</header>
+
+<main>
+    <template><p>This is hidden text</p></template>
+    <details>
+        <summary>Some Contents</summary>
+        <ol>
+            <li>code</li>
+            <li>iframe</li>
+            <li>audio</li>
+            <li>video</li>
+            <li>canvas</li>
+            <li>svg</li>
+            <li>table</li>
+        </ol>
+    </details>
+    <div>
+        <h2>Code</h2>
+        <pre>
+        Here is some
+                C    O     D     E  :
+    </pre>
+        <code>print("hello world")</code>
+    </div>
+    <h2>iframe</h2>
+    <iframe src="https://ucsd.edu/" title="UCSD" height="300" width="400"></iframe>
+
+    <h2>audio test</h2>
+    <audio controls src="media/piano.mp3"></audio>
+    <h2>video test</h2>
+    <video controls src="media/typing.mp4" width=420 height=300></video>
+
+    <h2>canvas</h2>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        const ctx = canvas.getContext('2d')
+        ctx.fillStyle = 'red'
+        ctx.fillRect(20, 20, 50, 50)
+    </script>
+    <h2>SVG</h2>
+    <p>This is a circle
+        <svg height="50" width="50">
+            <circle cx="20" cy="20" r="20"></circle>
+        </svg>
+        inside inline text.
+    </p>
+    <h2>Table</h2>
+    <table>
+        <caption>Numbers</caption>
+        <colgroup>
+            <col>
+            <col span="3" class="data">
+        </colgroup>
+        <tr>
+            <td></td>
+            <th scope="col">2020</th>
+            <th scope="col">2021</th>
+            <th scope="col">2022</th>
+        </tr>
+        <tr>
+            <th scope="row">Group A</th>
+            <td>23</td>
+            <td>33</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <th scope="row">Group B</th>
+            <td>33</td>
+            <td>21</td>
+            <td>40</td>
+        </tr>
+    </table>
+    <h2> Form test</h2>
+    <label for="color">Choose a colour:</label>
+    <select name="color" id="color">
+        <optgroup label="warm">
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+        </optgroup>
+        <optgroup label="cool">
+            <option value="blue">blue</option>
+            <option value="purple">purple</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="scale">Scale</label>
+    <input type="range" list="ticks" id="scale" min="0" max="3" name="scale">
+
+    <datalist id="ticks">
+        <option value="1"></option>
+        <option value="2"></option>
+    </datalist>
+</main>
+<hr>
+<footer>
+    <p>end</p>
+</footer>
+</body>
+</html>

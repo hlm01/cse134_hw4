@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("fonts/BarlowSemiCondensed-Regular.ttf");
+}
+
+:root {
+    --nav-color: #1B0067;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#landscape img {
+    max-width: 100vw;
+    height: auto;
+}
+
+nav {
+    padding: 0 3em;
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav input {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav label {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav ul * {
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
+    text-decoration-color: rgb(0, 0, 0, 0);
+    transition-property: text-decoration-color;
+    transition-duration: 1s;
+}
+
+.heading-name {
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration-color: rgb(255, 255, 255, 1);
+}
+
+#hamburger-menu {
+    display: none;
+    position: absolute;
+    top: -40em;
+    right: 0;
+    background-color: var(--nav-color);
+}
+
+main {
+    padding: 0 3em 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+    #regular-menu {
+        display: none;
+    }
+
+    nav label {
+        display: revert;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    #hamburger:checked ~ #hamburger-menu {
+        animation-name: open;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes open {
+        100% {
+            transform: translateY(44em);
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    nav ul * {
+        font-size: larger;
+        padding: 10px;
+    }
+
+}
