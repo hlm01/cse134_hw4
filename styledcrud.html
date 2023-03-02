@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>styled CRUD</title>
+    <script src="styledblog.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="crudstyle.css">
+</head>
+
+<body>
+    <h1>Styled Blog List</h1>
+    <ul id="blog-list"></ul>
+    <button id="add"><img src="media/plus-outline.png" alt="add post button"></button>
+    <dialog id="add-dialog">
+        <h2>Add Post</h2>
+        <form method="dialog" id="add-form">
+            <label for="new-title">Post Title</label>
+            <input type="text" name="title" id="new-title">
+            <label for="date">Date Posted</label>
+            <input type="date" name="date" id="date">
+            <label for="summary">Post Summary</label>
+            <input type="text" name="summary" id="summary">
+            <button value="OK">OK</button>
+            <button value="Cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="edit-dialog">
+        <h2>Edit Post</h2>
+        <form method="dialog" id="edit-form">
+            <label for="edit-title">Post Title</label>
+            <input type="text" name="title" id="edit-title">
+            <label for="edit-date">Date Posted</label>
+            <input type="date" name="date" id="edit-date">
+            <label for="edit-summary">Post Summary</label>
+            <input type="text" name="summary" id="edit-summary">
+            <button value="OK">Edit</button>
+            <button value="Cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="confirm-dialog">
+        <p>Delete post?</p>
+        <form method="dialog" id="delete-form">
+            <button value="Y"> Yes </button>
+            <button value="N" autofocus>Cancel</button>
+        </form>
+    </dialog>
+</body>
+
+</html>

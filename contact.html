@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,12 @@
         form {
             display: flex;
             flex-direction: column;
+            width: 30ch;
+            font-size: 1.5em;
+        }
 
+        form input {
+            font-size: 0.7em;
         }
 
         button {
@@ -35,51 +41,54 @@
         }
 
         textarea {
+            font-size: 0.7em;
             font-family: sans-serif;
         }
     </style>
 </head>
+
 <body>
-<header>
-    <nav>
-        <h1 class="heading-name">Henry Lin</h1>
-        <ul id="regular-menu">
+    <header>
+        <nav>
+            <h1 class="heading-name">Henry Lin</h1>
+            <ul id="regular-menu">
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#education">Education</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-
-        <input type="checkbox" id="hamburger">
-        <label for="hamburger"><img src="menu.png" alt="menu"></label>
-        <ul id="hamburger-menu">
-            <li class="mobile-item"><a href="index.html">Home</a></li>
-            <li class="mobile-item"><a href="index.html#education">Education</a></li>
-            <li class="mobile-item"><a href="index.html#skills">Skills</a></li>
-            <li class="mobile-item"><a href="index.html#experience">Experience</a></li>
-            <li class="mobile-item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
 
-</header>
-<main>
-    <h2>Contact</h2>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger"><img src="menu.png" alt="menu"></label>
+            <ul id="hamburger-menu">
+                <li class="mobile-item"><a href="index.html">Home</a></li>
+                <li class="mobile-item"><a href="index.html#education">Education</a></li>
+                <li class="mobile-item"><a href="index.html#skills">Skills</a></li>
+                <li class="mobile-item"><a href="index.html#experience">Experience</a></li>
+                <li class="mobile-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <form>
-        <label for="name">Name</label>
-        <input name="name" type="text" id="name">
-        <label for="email">Email</label>
-        <input name="email" type="email" id="email">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" cols="30"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    </header>
+    <main>
+        <h2>Contact</h2>
 
-</main>
+        <form>
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
 </body>
+
 </html>
