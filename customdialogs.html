@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Custom Dialogs</title>
     <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
     <script src="customdialog.js" type="module"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFCL544QYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SFCL544QYS');
+    </script>
 </head>
+
 <body>
-<button id="alert">Custom Alert</button>
-<button id="confirm">Custom Confirm</button>
-<button id="prompt">Custom Prompt</button>
-<output></output>
-<dialog id="alert-box">
-    <p>This is an alert.</p>
-    <form method="dialog">
-        <button>OK</button>
-    </form>
-</dialog>
-<dialog id="confirm-box">
-    <p>message</p>
-    <form method="dialog">
-        <button value="ok">OK</button>
-        <button value="cancel">Cancel</button>
-    </form>
-</dialog>
-<dialog id="prompt-box">
-    <form method="dialog">
-        <label for="dialog-input">message</label>
-        <input type="text" name="input" id="dialog-input">
-        <button value="ok">OK</button>
-        <button value="cancel">Cancel</button>
-    </form>
-</dialog>
+    <button id="alert">Custom Alert</button>
+    <button id="confirm">Custom Confirm</button>
+    <button id="prompt">Custom Prompt</button>
+    <output></output>
+    <dialog id="alert-box">
+        <p>This is an alert.</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+    <dialog id="confirm-box">
+        <p>message</p>
+        <form method="dialog">
+            <button value="ok">OK</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="prompt-box">
+        <form method="dialog">
+            <label for="dialog-input">message</label>
+            <input type="text" name="input" id="dialog-input">
+            <button value="ok">OK</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
 </body>
+
 </html>
