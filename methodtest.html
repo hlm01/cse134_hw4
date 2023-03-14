@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http.js" type="module"></script>
+    <title>Method Test</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 30em;
+        }
+        form div{
+            display: flex;
+        }
+        button{
+            max-width: 5em;
+            margin: 3em;
+        }
+    </style>
+</head>
+<body>
+<h2>Request</h2>
+<form id="test-form">
+    <label for="record-id">ID</label>
+    <input id="record-id" name="id">
+    <label for="article-name">Article Name</label>
+    <input id="article-name" name = "name">
+    <label for="article-body">Article Body</label>
+    <textarea id = "article-body" name = "body" rows="8"></textarea>
+    <div>
+    <button type="submit" id="post-btn">Post</button>
+    <button type="submit" id="get-btn">Get</button>
+    <button type="submit" id="put-btn">Put</button>
+    <button type="submit" id="delete-btn">Delete</button>
+    </div>
+</form>
+<h2>Response</h2>
+<output id="response">
+</output>
+</body>
+</html>

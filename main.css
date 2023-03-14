@@ -79,6 +79,11 @@ nav ul * {
     color: white;
 }
 
+.HW5{
+font-size: 2em;
+}
+
+
 nav ul li a:hover {
     text-decoration-color: rgb(255, 255, 255, 1);
 }

@@ -1,1 +1,6 @@
-{}
+{
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  }
+}
